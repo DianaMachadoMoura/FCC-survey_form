@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    
+}
+
+body{
+    background: url('https://images.unsplash.com/photo-1440404653325-ab127d49abc1?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+
+#title, #description, footer{
+    text-shadow: 2px 2px 2px rgba(0,0,0,.5);
+    color:white;
+    padding: 10px;
+}
+
+header{
+    background-color: rgba(132, 112, 79,0.5);
+    margin: auto;
+    max-width: 900px;
+}
+
+#title{
+    font-size: 42pt;
+    padding-bottom:0px;
+}
+
+#description{
+    padding-top: 0px;
+    font-size: 20px;
+}
+
+.survey{
+    background: rgba(68, 66, 66, 0.85);
+    width: 600px;
+    padding: 30px;
+    margin: auto;
+    border-radius: 10px;
+    text-align: left;
+}
+#small{
+    font-size: 12px;
+}
+
+#name, #email, #number, #dropdown, #submit{
+    width:530px;
+    padding: 15px;
+    border-radius: 10px;
+    border:none;
+    font-size: 12pt;
+    color: rgba(151, 55, 34, 0.86);
+}
+
+#fav{
+    width: 530px;
+    border-radius:10px;
+    border: none;
+    font-size:18px;
+    color: rgba(151, 55, 34, 0.86);
+}
+
+#submit{
+    font-size: 20px;
+    color:white;
+    background-color:rgba(77, 104, 43, 0.86);
+    border: 3px solid rgba(77, 104, 43, 0.86);
+    font-weight: bold;
+    margin-top:4%;
+}
+
+@media screen and (max-width: 600px){
+
+    #title{
+        font-size: 6vh;
+    }
+
+    #description{
+        font-size: 2.5vh;
+    }
+
+    .survey{
+        max-width: 350px;
+    
+    }
+
+    #name, #email, #number, #dropdown, #submit, #fav{
+        width: 280px;
+    }
+}

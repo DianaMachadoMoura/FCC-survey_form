@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Movie Survey</h1>
+        <p id="description">Please take a few moments to complete this small survey about your movie preferences</p>
+    </header>
+    <div class="survey">
+        <form id="survey-form" action="#">
+
+            <p><label for="name" id="name-label">Name</label></p>
+            <input type="text" id="name" name="name" placeholder="Please enter your name" required>
+
+            <p><label for="email" id="email-label">Email</label></p>
+            <input type="email" id="email" name="email" placeholder="Please enter your e-mail" required>
+
+            <p><label for="number" id="number-label">Age</label></p>
+            <input type="number" id="number" name="age" placeholder="Age" min="6" max="120">
+
+            <p>Please select your gender:</p>
+            <input type="radio" id="female" name="gender" value="f">
+            <label for="female">Female</label>
+            <br>
+            <input type="radio" id="male" name="gender" value="m">
+            <label for="male">Male</label>
+            <br>
+            <input type="radio" id="non-bin" name="gender" value="nb">
+            <label for="non-bin">Genderqueer/Non-Binary</label>
+            <br>
+            <input type="radio" id="pnr" name="gender" value="nr">
+            <label for="pnr">Prefer not to respond</label>
+
+            <p>What is your favorite genre? <span id="small">(You can choose more than one option)</span></p>
+            <input type="checkbox" id="comedy" name="comedy" value="1">
+            <label for="comedy">Comedy</label><br>
+            <input type="checkbox" id="drama" name="drama" value="2">
+            <label for="drama">Drama</label><br>
+            <input type="checkbox" id="adventure" name="adventure" value="3">
+            <label for="adventure">Adventure</label><br>
+            <input type="checkbox" id="action" name="action" value="4">
+            <label for="action">Action</label><br>
+            <input type="checkbox" id="thriller" name="thriller" value="5">
+            <label for="thriller">Thriller</label><br>
+            <input type="checkbox" id="fantasy" name="fantasy" value="6">
+            <label for="fantasy">Fantasy</label><br>
+            <input type="checkbox" id="horror" name="horror" value="7">
+            <label for="horror">Horror</label><br>
+            <input type="checkbox" id="romance" name="romance" value="8">
+            <label for="romance">Romance</label><br>
+            <input type="checkbox" id="documentary" name="documentary" value="9">
+            <label for="documentary">Documentary</label><br>
+            <input type="checkbox" id="musical" name="musical" value="10">
+            <label for="musical">Musical</label><br>
+            <input type="checkbox" id="sci-fi" name="sci-fi" value="11">
+            <label for="sci-fi">Science-Fiction</label><br>
+            <input type="checkbox" id="western" name="western" value="12">
+            <label for="western">Western</label><br>
+            <input type="checkbox" id="historical" name="historical" value="13">
+            <label for="historical">Historical</label><br>
+            <input type="checkbox" id="animation" name="animation" value="14">
+            <label for="animation">Animation</label>
+
+            <p>How often do you watch a movie?</p>
+            <input type="radio" id="daily" name="freq" value="1">
+            <label for="daily">Daily</label><br>
+            <input type="radio" id="weekly" name="freq" value="2">
+            <label for="weekly">Weekly</label><br>
+            <input type="radio" id="monthly" name="freq" value="3">
+            <label for="monthly">Monthly</label><br>
+            <input type="radio" id="less" name="freq" value="4">
+            <label for="less">Less than once a month</label>
+
+            <p><label for="dropdown">What makes you choose a movie?</label></p>
+            <select name="dropdown" id="dropdown">
+                <option value="" disabled selected>Select an option</option>
+                <option value="trailer">Trailer</option>
+                <option value="reviews">Reviews</option>
+                <option value="actors">Actors involved</option>
+                <option value="wom">Word of mouth</option>
+                <option value="adv">Adverts</option>
+            </select>
+
+            <p><label for="fav">What is your favorite movie?</label></p>
+            <textarea name="fav" id="fav" cols="50" rows="5" placeholder="Please, enter here your favorite movie">
+            </textarea>
+            <br>
+            <input type="button" id="submit" value="Submit">
+        </form>
+    </div>
+    <footer>
+        &copy;Diana Moura 2020 || Freecodecamp - Survey Form Challenge
+    </footer>
+</body>
+
+</html>
